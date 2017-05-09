@@ -1,6 +1,7 @@
 <template>
   <div class="my-app">
     <div class="user-details" v-if="enterName">
+      <h1>Vuechat</h1>
       <label>Please enter your name:</label><br>
       <input type="text" v-model="username">
       <button v-on:click="connectToChat">Next</button>
