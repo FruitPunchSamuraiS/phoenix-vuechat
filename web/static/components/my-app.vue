@@ -1,6 +1,5 @@
 <template>
   <div class="my-app">
-    <h1>Vuechat</h1>
     <div class="user-details" v-if="enterName">
       <label>Please enter your name:</label><br>
       <input type="text" v-model="username">
@@ -8,8 +7,8 @@
     </div>
     <div id="main-container" v-else>
       <div id="users-list">
-        <ul>
         <h3>Online</h3>
+        <ul>
         <transition-group name="user-appear">
           <li v-for="user in users" v-bind:key="user.user">
             {{user.user}} ({{user.online_at}})
